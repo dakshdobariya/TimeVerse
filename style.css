@@ -60,21 +60,6 @@ letter-spacing:-2px;
 
 .tagline{
 font-size:28px;
-color:#6e6e73;
-margin-bottom:20px;
-}
-
-.hero-text{
-max-width:700px;
-margin:auto;
-font-size:20px;
-line-height:1.8;
-color:#6e6e73;
-margin-bottom:40px;
-}
-
-.tagline{
-font-size:28px;
 color:#38bdf8;
 font-weight:600;
 margin-bottom:20px;
@@ -101,12 +86,16 @@ border-radius:50px;
 text-decoration:none;
 
 font-weight:600;
+  
+box-shadow:0 10px 30px rgba(0,113,227,.35);
 
 transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.05);
+transform:scale(1.08);
+box-shadow:0 10px 30px rgba(0,113,227,.4);
+}
   
 .hero{
 min-height:70vh;
@@ -152,10 +141,7 @@ margin-bottom:15px;
 }
 
 .clock-card p{
-color:#2563eb;
-}
-
-.clock-card p{
 font-size:24px;
 font-weight:600;
+color:#2563eb;
 }
