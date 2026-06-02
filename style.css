@@ -1,12 +1,8 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
-}
-
 body{
-background:#f5f7ff;
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#7c3aed);
+min-height:100vh;
 }
 
 nav{
@@ -14,70 +10,86 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
-background:linear-gradient(90deg,#0f172a,#2563eb,#9333ea);
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
 }
 
 .logo{
-font-size:30px;
-font-weight:bold;
+font-size:32px;
+font-weight:800;
 color:white;
+
+text-shadow:
+0 0 10px #38bdf8,
+0 0 20px #38bdf8,
+0 0 40px #38bdf8;
 }
 
-nav ul{
+ul{
 display:flex;
-list-style:none;
 gap:30px;
+list-style:none;
 }
 
-nav a{
+ul a{
 color:white;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
+transition:.3s;
+}
+
+ul a:hover{
+color:#38bdf8;
 }
 
 .hero{
-height:90vh;
+height:85vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:white;
-background:linear-gradient(135deg,#2563eb,#9333ea);
+padding:0 20px;
+}
+
+.hero-content{
+max-width:900px;
 }
 
 .hero h1{
-font-size:70px;
+font-size:80px;
+color:white;
+margin-bottom:20px;
+
+text-shadow:
+0 0 15px rgba(255,255,255,.4);
+}
+
+.tagline{
+font-size:28px;
+color:#38bdf8;
+font-weight:600;
 margin-bottom:20px;
 }
 
+.hero-text{
+font-size:20px;
+line-height:1.8;
+color:#e2e8f0;
+margin-bottom:40px;
+}
+
 .btn{
+display:inline-block;
+padding:18px 40px;
 background:white;
 color:#2563eb;
-padding:15px 35px;
-border-radius:50px;
+font-weight:bold;
 text-decoration:none;
-font-weight:bold;
+border-radius:50px;
+transition:.4s;
 }
 
-.clock-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-padding:80px;
-}
-
-.clock-card{
-background:white;
-padding:40px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-}
-
-.clock-card p{
-font-size:30px;
-font-weight:bold;
-color:#2563eb;
-margin-top:15px;
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(255,255,255,.25);
 }
