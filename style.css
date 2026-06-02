@@ -1,0 +1,83 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f5f7ff;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:linear-gradient(90deg,#0f172a,#2563eb,#9333ea);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background:linear-gradient(135deg,#2563eb,#9333ea);
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.btn{
+background:white;
+color:#2563eb;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.clock-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:80px;
+}
+
+.clock-card{
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.clock-card p{
+font-size:30px;
+font-weight:bold;
+color:#2563eb;
+margin-top:15px;
+}
