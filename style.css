@@ -49,6 +49,11 @@ transition:.3s;
 .hero{
 padding:120px 20px;
 text-align:center;
+min-height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 }
 
 .hero h1{
@@ -66,6 +71,8 @@ margin-bottom:20px;
 }
 
 .hero-text{
+max-width:700px;
+margin:auto;
 font-size:20px;
 line-height:1.8;
 color:#e2e8f0;
@@ -95,14 +102,6 @@ transition:.3s;
 .btn:hover{
 transform:scale(1.08);
 box-shadow:0 10px 30px rgba(0,113,227,.4);
-}
-  
-.hero{
-min-height:70vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
 }
   
 }
