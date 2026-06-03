@@ -59,8 +59,10 @@ hour12:true
 
 }
 
+if(document.getElementById("india")){
 setInterval(updateClocks,1000);
 updateClocks();
+}
 
 console.log("Script Running");
 
