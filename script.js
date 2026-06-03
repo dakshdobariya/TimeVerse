@@ -1,32 +1,62 @@
 function updateClocks(){
 
 document.getElementById("india").innerHTML =
-new Date().toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata"});
+new Date().toLocaleTimeString("en-US",{
+timeZone:"Asia/Kolkata",
+hour12:true
+});
 
 document.getElementById("london").innerHTML =
-new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/London"});
+new Date().toLocaleTimeString("en-US",{
+timeZone:"Europe/London",
+hour12:true
+});
 
 document.getElementById("newyork").innerHTML =
-new Date().toLocaleTimeString("en-US",{timeZone:"America/New_York"});
+new Date().toLocaleTimeString("en-US",{
+timeZone:"America/New_York",
+hour12:true
+});
 
 document.getElementById("tokyo").innerHTML =
-new Date().toLocaleTimeString("ja-JP",{timeZone:"Asia/Tokyo"});
+new Date().toLocaleTimeString("en-US",{
+timeZone:"Asia/Tokyo",
+hour12:true
+});
 
 document.getElementById("dubai").innerHTML =
-new Date().toLocaleTimeString("en-AE",{timeZone:"Asia/Dubai"});
-  
+new Date().toLocaleTimeString("en-US",{
+timeZone:"Asia/Dubai",
+hour12:true
+});
+
 document.getElementById("singapore").innerHTML =
-new Date().toLocaleTimeString("en-SG",{timeZone:"Asia/Singapore"});
+new Date().toLocaleTimeString("en-US",{
+timeZone:"Asia/Singapore",
+hour12:true
+});
 
 document.getElementById("paris").innerHTML =
-new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris"});
+new Date().toLocaleTimeString("en-US",{
+timeZone:"Europe/Paris",
+hour12:true
+});
 
 document.getElementById("utc").innerHTML =
-new Date().toUTCString().split(" ")[4];
+new Date().toLocaleTimeString("en-US",{
+timeZone:"UTC",
+hour12:true
+});
 
 document.getElementById("local").innerHTML =
-new Date().toLocaleTimeString();
-  
+new Date().toLocaleTimeString("en-US",{
+hour12:true
+});
+
+}
+
+setInterval(updateClocks,1000);
+updateClocks();
 }
 
 setInterval(updateClocks,1000);
