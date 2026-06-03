@@ -134,7 +134,12 @@ gap:25px;
 background:rgba(255,255,255,.8);
 backdrop-filter:blur(12px);
 padding:35px;
-min-height:140px;
+min-height:180px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 transition:.3s;
@@ -142,8 +147,8 @@ border:1px solid rgba(255,255,255,.5);
 }
 
 .clock-card:hover{
-transform:translateY(-8px) scale(1.02);
-box-shadow:0 15px 35px rgba(37,99,235,.15);
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 40px rgba(37,99,235,.15);
 }
 
 .clock-card h3{
@@ -151,7 +156,7 @@ margin-bottom:15px;
 }
 
 .clock-card p{
-font-size:28px;
+font-size:32px;
 font-weight:700;
 color:#2563eb;
 letter-spacing:1px;
@@ -173,7 +178,8 @@ margin-bottom:50px;
 
 .clock-dashboard h2{
 text-align:center;
-font-size:42px;
-margin-bottom:40px;
+font-size:52px;
+font-weight:800;
+margin-bottom:50px;
 color:#111827;
 }
