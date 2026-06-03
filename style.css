@@ -46,6 +46,7 @@ ul a:hover{
 color:#0071e3;
 transition:.3s;
 }
+
 .active{
 color:#0071e3 !important;
 font-weight:700;
