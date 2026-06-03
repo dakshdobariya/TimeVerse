@@ -289,3 +289,9 @@ color:#cbd5e1;
 .dark-mode ul a{
 color:#f8fafc;
 }
+
+.dark-mode .hero h1{
+color:white;
+background:none;
+-webkit-text-fill-color:white;
+}
