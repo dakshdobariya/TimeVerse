@@ -1,3 +1,4 @@
+console.log("Script Loaded");
 function updateClocks(){
 
 if(!document.getElementById("india")){
