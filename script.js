@@ -14,6 +14,19 @@ new Date().toLocaleTimeString("ja-JP",{timeZone:"Asia/Tokyo"});
 
 document.getElementById("dubai").innerHTML =
 new Date().toLocaleTimeString("en-AE",{timeZone:"Asia/Dubai"});
+  
+document.getElementById("singapore").innerHTML =
+new Date().toLocaleTimeString("en-SG",{timeZone:"Asia/Singapore"});
+
+document.getElementById("paris").innerHTML =
+new Date().toLocaleTimeString("fr-FR",{timeZone:"Europe/Paris"});
+
+document.getElementById("utc").innerHTML =
+new Date().toUTCString().split(" ")[4];
+
+document.getElementById("local").innerHTML =
+new Date().toLocaleTimeString();
+  
 }
 
 setInterval(updateClocks,1000);
