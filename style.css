@@ -295,3 +295,7 @@ color:white;
 background:none;
 -webkit-text-fill-color:white;
 }
+
+.dark-mode .clock-dashboard h2{
+color:white;
+}
