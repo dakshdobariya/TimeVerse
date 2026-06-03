@@ -139,7 +139,8 @@ border:1px solid rgba(255,255,255,.5);
 }
 
 .clock-card:hover{
-transform: translateY(-6px);
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 15px 35px rgba(37,99,235,.15);
 }
 
 .clock-card h3{
@@ -147,7 +148,22 @@ margin-bottom:15px;
 }
 
 .clock-card p{
-font-size:24px;
-font-weight:600;
+font-size:28px;
+font-weight:700;
 color:#2563eb;
+letter-spacing:1px;
+}
+
+.clock-container{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.time-info{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-bottom:40px;
 }
