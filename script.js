@@ -31,3 +31,5 @@ new Date().toLocaleTimeString();
 
 setInterval(updateClocks,1000);
 updateClocks();
+
+console.log("Script Running");
