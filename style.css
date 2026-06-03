@@ -17,6 +17,7 @@ box-shadow:
 
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 .logo{
@@ -47,9 +48,9 @@ transition:.3s;
 }
 
 .hero{
-padding:120px 20px;
+padding:80px 20px;
 text-align:center;
-min-height:70vh;
+min-height:55vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -61,7 +62,10 @@ font-size:82px;
 font-weight:800;
 margin-bottom:20px;
 letter-spacing:-2px;
-color:#111827;
+
+background:linear-gradient(135deg,#111827,#2563eb);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .tagline{
@@ -111,8 +115,12 @@ text-align:center;
 }
 
 .clock-preview h2{
-font-size:42px;
+font-size:48px;
+font-weight:800;
 margin-bottom:40px;
+background:linear-gradient(135deg,#111827,#2563eb);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .clock-grid{
@@ -126,7 +134,7 @@ background:rgba(255,255,255,.8);
 backdrop-filter:blur(12px);
 padding:30px;
 border-radius:20px;
-box-shadow: 0 5px 15px rgba(0,0,0,.06);
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 transition:.3s;
 border:1px solid rgba(255,255,255,.5);
 }
