@@ -62,6 +62,7 @@ console.log("Script Running");
 
 const themeToggle = document.getElementById("theme-toggle");
 
+if(themeToggle){
 themeToggle.addEventListener("click", () => {
 document.body.classList.toggle("dark-mode");
 
@@ -71,3 +72,4 @@ themeToggle.innerHTML = "☀️";
 themeToggle.innerHTML = "🌙";
 }
 });
+}
