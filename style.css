@@ -327,3 +327,14 @@ color:#f8fafc !important;
 .dark-mode .footer-links a:hover{
 color:#60a5fa !important;
 }
+
+.date{
+font-size:16px;
+font-weight:500;
+opacity:.85;
+margin-top:10px;
+}
+
+.dark-mode .date{
+color:#cbd5e1;
+}
