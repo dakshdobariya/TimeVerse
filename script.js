@@ -25,6 +25,14 @@ timeZone:"Europe/London",
 hour12:true
 });
 
+document.getElementById("london-date").innerHTML =
+new Date().toLocaleDateString("en-GB",{
+timeZone:"Europe/London",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+  
 document.getElementById("newyork").innerHTML =
 new Date().toLocaleTimeString("en-US",{
 timeZone:"America/New_York",
