@@ -10,6 +10,20 @@ new Date().toLocaleTimeString("en-US",{
 timeZone:"Asia/Kolkata",
 hour12:true
 });
+  
+document.getElementById("india").innerHTML =
+new Date().toLocaleTimeString("en-US",{
+timeZone:"Asia/Kolkata",
+hour12:true
+});
+
+document.getElementById("india-date").innerHTML =
+new Date().toLocaleDateString("en-IN",{
+timeZone:"Asia/Kolkata",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
 
 document.getElementById("london").innerHTML =
 new Date().toLocaleTimeString("en-US",{
