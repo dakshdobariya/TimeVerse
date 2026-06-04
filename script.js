@@ -4,12 +4,6 @@ function updateClocks(){
 if(!document.getElementById("india")){
 return;
 }
-
-document.getElementById("india").innerHTML =
-new Date().toLocaleTimeString("en-US",{
-timeZone:"Asia/Kolkata",
-hour12:true
-});
   
 document.getElementById("india").innerHTML =
 new Date().toLocaleTimeString("en-US",{
