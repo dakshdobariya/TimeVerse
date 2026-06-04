@@ -299,3 +299,10 @@ background:none;
 .dark-mode .clock-dashboard h2{
 color:white;
 }
+
+.dark-mode .logo{
+color:white;
+text-shadow:
+0 0 10px rgba(96,165,250,.8),
+0 0 20px rgba(96,165,250,.5);
+}
