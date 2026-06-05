@@ -12,7 +12,7 @@ hour12:true
 });
 
 document.getElementById("india-date").innerHTML =
-new Date().toLocaleDateString("en-IN",{
+new Date().toLocaleDateString("en-GB",{
 timeZone:"Asia/Kolkata",
 day:"numeric",
 month:"long",
@@ -68,7 +68,7 @@ hour12:true
 });
 
 document.getElementById("dubai-date").innerHTML =
-new Date().toLocaleDateString("en-AE",{
+new Date().toLocaleDateString("en-GB",{
 timeZone:"Asia/Dubai",
 day:"numeric",
 month:"long",
@@ -82,7 +82,7 @@ hour12:true
 });
 
 document.getElementById("singapore-date").innerHTML =
-new Date().toLocaleDateString("en-SG",{
+new Date().toLocaleDateString("en-GB",{
 timeZone:"Asia/Singapore",
 day:"numeric",
 month:"long",
@@ -123,7 +123,7 @@ hour12:true
 });
 
 document.getElementById("local-date").innerHTML =
-new Date().toLocaleDateString("en-IN",{
+new Date().toLocaleDateString("en-GB",{
 day:"numeric",
 month:"long",
 year:"numeric"
