@@ -53,28 +53,68 @@ timeZone:"Asia/Tokyo",
 hour12:true
 });
 
+document.getElementById("tokyo-date").innerHTML =
+new Date().toLocaleDateString("en-JP",{
+timeZone:"Asia/Tokyo",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+  
 document.getElementById("dubai").innerHTML =
 new Date().toLocaleTimeString("en-US",{
 timeZone:"Asia/Dubai",
 hour12:true
 });
 
+document.getElementById("dubai-date").innerHTML =
+new Date().toLocaleDateString("en-AE",{
+timeZone:"Asia/Dubai",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+  
 document.getElementById("singapore").innerHTML =
 new Date().toLocaleTimeString("en-US",{
 timeZone:"Asia/Singapore",
 hour12:true
 });
 
+document.getElementById("singapore-date").innerHTML =
+new Date().toLocaleDateString("en-SG",{
+timeZone:"Asia/Singapore",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+  
 document.getElementById("paris").innerHTML =
 new Date().toLocaleTimeString("en-US",{
 timeZone:"Europe/Paris",
 hour12:true
 });
 
+document.getElementById("paris-date").innerHTML =
+new Date().toLocaleDateString("fr-FR",{
+timeZone:"Europe/Paris",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+  
 document.getElementById("utc").innerHTML =
 new Date().toLocaleTimeString("en-US",{
 timeZone:"UTC",
 hour12:true
+});
+
+document.getElementById("utc-date").innerHTML =
+new Date().toLocaleDateString("en-GB",{
+timeZone:"UTC",
+day:"numeric",
+month:"long",
+year:"numeric"
 });
 
 document.getElementById("local").innerHTML =
@@ -82,6 +122,13 @@ new Date().toLocaleTimeString("en-US",{
 hour12:true
 });
 
+document.getElementById("local-date").innerHTML =
+new Date().toLocaleDateString("en-IN",{
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+  
 }
 
 if(document.getElementById("india")){
