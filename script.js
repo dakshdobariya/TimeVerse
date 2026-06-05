@@ -39,6 +39,14 @@ timeZone:"America/New_York",
 hour12:true
 });
 
+document.getElementById("newyork-date").innerHTML =
+new Date().toLocaleDateString("en-US",{
+timeZone:"America/New_York",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+  
 document.getElementById("tokyo").innerHTML =
 new Date().toLocaleTimeString("en-US",{
 timeZone:"Asia/Tokyo",
