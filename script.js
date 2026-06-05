@@ -40,7 +40,7 @@ hour12:true
 });
 
 document.getElementById("newyork-date").innerHTML =
-new Date().toLocaleDateString("en-US",{
+new Date().toLocaleDateString("en-GB",{
 timeZone:"America/New_York",
 day:"numeric",
 month:"long",
@@ -54,7 +54,7 @@ hour12:true
 });
 
 document.getElementById("tokyo-date").innerHTML =
-new Date().toLocaleDateString("en-JP",{
+new Date().toLocaleDateString("en-GB",{
 timeZone:"Asia/Tokyo",
 day:"numeric",
 month:"long",
@@ -96,7 +96,7 @@ hour12:true
 });
 
 document.getElementById("paris-date").innerHTML =
-new Date().toLocaleDateString("fr-FR",{
+new Date().toLocaleDateString("fr-GB",{
 timeZone:"Europe/Paris",
 day:"numeric",
 month:"long",
