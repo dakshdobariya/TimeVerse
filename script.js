@@ -39,6 +39,9 @@ container.innerHTML = cities.map(city => `
 
 function updateClocks(){
 
+console.log(document.getElementById("utc"));
+console.log(document.getElementById("local"));
+  
 cities.forEach(city => {
 
 document.getElementById(city.id).innerHTML =
