@@ -56,7 +56,32 @@ year:"numeric"
 });
 
 });
+  
+document.getElementById("utc").innerHTML =
+new Date().toLocaleTimeString("en-US",{
+timeZone:"UTC",
+hour12:true
+});
 
+document.getElementById("utc-date").innerHTML =
+new Date().toLocaleDateString("en-GB",{
+timeZone:"UTC",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+
+document.getElementById("local").innerHTML =
+new Date().toLocaleTimeString("en-US",{
+hour12:true
+});
+
+document.getElementById("local-date").innerHTML =
+new Date().toLocaleDateString("en-GB",{
+day:"numeric",
+month:"long",
+year:"numeric"
+});
 }
 
 if(document.getElementById("clock-container")){
